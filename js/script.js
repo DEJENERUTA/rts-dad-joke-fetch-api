@@ -12,5 +12,4 @@ async function getJock() {
 }
 
 getJock();
-clickForNewJokes.addEventListener("click", getJock);
- */
+clickForNewJokes.addEventListener("click", getJock); */
