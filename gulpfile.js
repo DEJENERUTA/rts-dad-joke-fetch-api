@@ -1,5 +1,17 @@
 const { src, dest, watch, series } = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
+const gulp = require("gulp");
+const babel = require("gulp-babel");
+
+function buildJavascript() {
+  return src("*js/**/*.js")
+    .pipe(
+      babel({
+        presets: ["@babel/preset-env"],
+      })
+    )
+    .pipe(gulp.dest("dist"));
+}
 
 function buildStyles() {
   return (
@@ -11,7 +23,10 @@ function buildStyles() {
 }
 
 function watchTask() {
-  watch(["style/**/*.scss", "*.html"], buildStyles);
+  watch(
+    ["style/**/*.scss", "js/**/*.js", "*.html"],
+    series(buildStyles, buildJavascript)
+  );
 }
 
-exports.default = series(buildStyles, watchTask);
+exports.default = series(buildStyles, buildJavascript, watchTask);
