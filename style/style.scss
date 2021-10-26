@@ -3,9 +3,13 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  max-width: 1000px;
+}
 h1 {
   text-align: center;
   padding: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .cards {
   margin: 0 auto;

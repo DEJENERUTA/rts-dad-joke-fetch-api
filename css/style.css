@@ -3,10 +3,17 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  max-width: 1000px;
+}
+
 h1 {
   text-align: center;
   padding: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .cards {
   margin: 0 auto;
   padding: 0.75rem;
@@ -16,9 +23,11 @@ h1 {
   height: 400px;
   border-radius: 20px;
 }
+
 .jokes {
   padding: 10px;
 }
+
 .button {
   width: 100px;
   text-align: center;
