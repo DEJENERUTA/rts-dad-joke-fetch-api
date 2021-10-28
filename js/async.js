@@ -1,6 +1,10 @@
 const jokes = document.querySelector("#new-jokes");
 const clickForNewJokes = document.querySelector("#findNewJokes");
-
+const listOfJocke = [
+  "I went to the store to pick up eight cans of sprite... when I got home I realized I'd only picked seven up",
+  "Why did the m&m go to school? Because it wanted to be a Smartie!",
+  "I got fired from a florist, apparently I took too many leaves.",
+];
 const myFunction = async () => {
   let response = await fetch("https://icanhazdadjoke.com/", {
     headers: {

@@ -6,6 +6,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 var jokes = document.querySelector("#new-jokes");
 var clickForNewJokes = document.querySelector("#findNewJokes");
+var listOfJocke = ["I went to the store to pick up eight cans of sprite... when I got home I realized I'd only picked seven up", "Why did the m&m go to school? Because it wanted to be a Smartie!", "I got fired from a florist, apparently I took too many leaves."];
 
 var myFunction = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
