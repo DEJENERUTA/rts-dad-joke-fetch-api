@@ -51,3 +51,34 @@ function getJock() {
 
 clickForNewJokes.addEventListener("click", getJock);
 getJock();
+/* const url = "https://swapi.dev/api/";
+fetch(url).then((data) => console.logo(data));
+
+fetch(url)
+  .then((response) => response.json())
+  .then((data) => console.log(data)); */
+
+/* const url = "https://swapi.dev/api/";
+fetch(url)
+  .catch((error) => console.log("BAD", error))
+  .then((response) => console.log("GOOD", response)); */
+//swipe js
+
+document.querySelector("ul").addEventListener("click", function (e) {
+  var li = e.target.closest("li");
+  var btn = e.target.closest("button");
+
+  if (li && li.scrollLeft === 0) {
+    li.scrollBy({
+      left: 1,
+      behavior: "smooth"
+    });
+  } else if (!btn && li) {
+    li.scrollBy({
+      left: -1,
+      behavior: "smooth"
+    });
+  } else if (btn && li) {
+    li.remove();
+  }
+});
