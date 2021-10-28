@@ -17,7 +17,7 @@ h1 {
 .cards {
   margin: 0 auto;
   padding: 0.75rem;
-  background-color: #fdfd;
+  background-color: #7a33ff;
   border: 1px;
   width: 600px;
   height: 400px;
@@ -40,8 +40,9 @@ h1 {
   margin-right: auto;
   text-decoration: none;
 }
+
 ul {
-  width: 375px;
+  width: 575px;
   overflow: hidden;
   list-style: none;
   padding: 0;
@@ -80,7 +81,7 @@ li button:first-of-type {
 li span {
   flex: 2 0 100%;
   color: white;
-  background-color: slategrey;
+  background-color: #ff5733;
   padding: 0.5rem;
 }
 
