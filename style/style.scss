@@ -9,12 +9,15 @@ body {
 h1 {
   text-align: center;
   padding: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Roboto Condensed";
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
 }
 .cards {
   margin: 0 auto;
   padding: 0.75rem;
-  background-color: #fdfd;
+  background-color: #3341ff;
   border: 1px;
   width: 600px;
   height: 400px;
@@ -22,11 +25,13 @@ h1 {
 }
 .jokes {
   padding: 10px;
+  color: #fff;
 }
 .button {
   width: 100px;
   text-align: center;
   border: 1px solid #e74c3c;
+  background-color: #33ffd4;
   border-radius: 10px;
   margin-top: 20px;
   padding: 15px;
@@ -36,7 +41,7 @@ h1 {
   text-decoration: none;
 }
 ul {
-  width: 375px;
+  width: 575px;
   overflow: hidden;
   list-style: none;
   padding: 0;
@@ -69,17 +74,17 @@ li button {
 
 li button:first-of-type {
   flex: 1 0 30%;
-  background-color: orange;
+  background-color: #daf7a6;
 }
 
 li span {
   flex: 2 0 100%;
   color: white;
-  background-color: #ff5733;
+  background-color: #33ffd4;
   padding: 0.5rem;
 }
 
 li button:last-of-type {
   flex: 1 0 30%;
-  background-color: darkred;
+  background-color: #ffc300;
 }
