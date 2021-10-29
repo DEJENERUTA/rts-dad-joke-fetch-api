@@ -1,4 +1,4 @@
-/* const jokes = document.querySelector("#new-jokes");
+const jokes = document.querySelector("#new-jokes");
 const clickForNewJokes = document.querySelector("#findNewJokes");
 
 async function getJock() {
@@ -12,4 +12,4 @@ async function getJock() {
 }
 
 getJock();
-clickForNewJokes.addEventListener("click", getJock); */
+clickForNewJokes.addEventListener("click", getJock);
