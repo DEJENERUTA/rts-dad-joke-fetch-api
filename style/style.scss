@@ -6,7 +6,7 @@
 body {
   max-width: 1000px;
 }
-h1 {
+.heading {
   text-align: center;
   padding: 20px;
   font-family: "Roboto Condensed";
@@ -14,11 +14,27 @@ h1 {
   letter-spacing: 8px;
   line-height: 32px;
 }
-.cards {
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+.heading:hover {
+  border: 1px solid #33ffd4;
+  cursor: pointer;
+}
+.card {
   margin: 0 auto;
   padding: 0.75rem;
   background-color: #3341ff;
-  border: 1px;
   width: 600px;
   height: 400px;
   border-radius: 20px;
