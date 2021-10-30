@@ -6,7 +6,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 var jokes = document.querySelector("#new-jokes");
 var clickForNewJokes = document.querySelector("#findNewJokes");
-var listOfJocke = [];
+var jokeElement = document.querySelector("#jokelist");
+var listOfJocke = []; // fetch api with axios
 
 var myFunction = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
@@ -44,12 +45,22 @@ var myFunction = /*#__PURE__*/function () {
 
 function getJock() {
   myFunction().then(function (data) {
-    console.log(data);
     data = data.data;
     jokes.textContent = data.joke;
   });
 }
 
+for (var i = 0; i < 10; i++) {
+  myFunction().then(function (data) {
+    listOfJocke.push(data.data.joke);
+  });
+}
+
+console.log(joke);
+listOfJocke.forEach(function (joke) {
+  /* jokeElement.innerHTML += `<li> ${joke}</li>`; */
+  // here I am tryin get 10 jokes from array but it didn't work
+});
 clickForNewJokes.addEventListener("click", getJock);
 getJock(); //swipe js
 
